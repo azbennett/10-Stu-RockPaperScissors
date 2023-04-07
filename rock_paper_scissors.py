@@ -36,7 +36,10 @@ def main():
     else: c_answer = scissor
 
     #compare NPC VS PC
-    if (computer_choice == "r") and (user_choice == "p"):   
+    if (computer_choice == user_choice):         #checks for a tie
+        print()
+        print(f"You picked the same thing as the computer! {answer} vs {c_answer} was a tie.")
+    elif (computer_choice == "r") and (user_choice == "p"):   
         print()
         print(f"Your {answer} beat {c_answer}!")  #paper beats rock        
     elif (computer_choice == "p") and (user_choice == "s"): 
