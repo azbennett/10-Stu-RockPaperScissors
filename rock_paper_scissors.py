@@ -5,22 +5,23 @@ def main():
     os.system('cls')  #cleans things up so its nice and tidy
 
     print()
+    print("-------------------------------")
     print("Let's Play Rock Paper Scissors!")
+    print("-------------------------------")
     print()
 
-    #computer makes its choice
+    #The NPC makes its choice
     options = ["r", "p", "s"]
     computer_choice = random.choice(options)
 
-    #human choses its response
+    #The human picks their response
     user_choice = input("Make your Choice: (r)ock, (p)aper, (s)cissors? ")
-
 
     rock = "Rock"
     paper = "Paper"
     scissor = "Scissor"
 
-    #time to clean up the responses for both the PC and NPC
+    #Now it is time to clean up the responses for both the PC and NPC
     if user_choice == "r": answer = rock
     elif user_choice == "p": answer = paper
     elif user_choice == "s": answer = scissor
