@@ -28,6 +28,7 @@ def main():
     else:
         print()
         print("Uh-oh, looks like you did not answer correctly.  Lets try this again.")
+        input("Press any key to continue...")
         main()
 
     if computer_choice == "r": c_answer = rock
