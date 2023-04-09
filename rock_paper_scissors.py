@@ -19,16 +19,11 @@ def main():
     correct_choices = ["r", "rock", "p", "paper", "s", "scissor", "scissors"]
     user_choice = input("Make your Choice: (r)ock, (p)aper, (s)cissors? ").lower()
     
-    #This is just to clean up my outputs later on
-    rock = "Rock"
-    paper = "Paper"
-    scissor = "Scissors"
-
     #Now it is time to clean up the responses for both the PC and NPC
     if user_choice in correct_choices:
-        if (user_choice == "r") or (user_choice == "rock"): answer = rock
-        elif (user_choice == "p") or (user_choice == "paper"): answer = paper
-        elif (user_choice == "s") or (user_choice == "scissor") or (user_choice == "scissors"): answer = scissor
+        if (user_choice == "r") or (user_choice == "rock"): answer = "Rock"
+        elif (user_choice == "p") or (user_choice == "paper"): answer = "Paper"
+        elif (user_choice == "s") or (user_choice == "scissor") or (user_choice == "scissors"): answer = "Scissors"
     else:
         time.sleep(.5)
         print()
@@ -36,9 +31,9 @@ def main():
         input("Press any key to continue...")
         main()
 
-    if computer_choice == "r": c_answer = rock
-    elif computer_choice == "p": c_answer = paper
-    else: c_answer = scissor
+    if computer_choice == "r": c_answer = "Rock"
+    elif computer_choice == "p": c_answer = "Paper"
+    else: c_answer = "Scissors"
 
     #compare NPC VS PC
     if (computer_choice == user_choice[0]):         #checks for a tie
