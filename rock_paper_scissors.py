@@ -19,6 +19,7 @@ def main():
     correct_choices = ["r", "rock", "p", "paper", "s", "scissor", "scissors"]
     user_choice = input("Make your Choice: (r)ock, (p)aper, (s)cissors? ").lower()
     
+    #This is just to clean up my outputs later on
     rock = "Rock"
     paper = "Paper"
     scissor = "Scissors"
